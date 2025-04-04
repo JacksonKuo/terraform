@@ -26,10 +26,6 @@ resource "digitalocean_record" "www" {
   value  = digitalocean_droplet.droplet.ipv4_address
 }
 
-data "github_repository" "repo" {
-  full_name = "JacksonKuo/app-springboot"
-}
-
 resource "github_actions_secret" "droplet_ip" {
   repository       = "app-springboot"
   secret_name      = "DROPLET_IP"
