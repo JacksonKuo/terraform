@@ -3,7 +3,7 @@ terraform {
     github = {
       source  = "integrations/github"
       version = "~> 6.0"
-      configuration_aliases = [github]
+      configuration_aliases = [github.child]
     }
   }
 }

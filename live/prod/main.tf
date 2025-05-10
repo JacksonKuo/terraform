@@ -1,9 +1,8 @@
-
 module springboot_app {
     source = "../../modules/multicloud/cluster"
     providers = {
-        digitalocean = digitalocean
-        github = github
+        digitalocean.parent = digitalocean
+        github.parent = github
     }
     cloud_provider = "digitalocean"
 }
