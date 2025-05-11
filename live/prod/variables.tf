@@ -14,6 +14,11 @@ variable "do_token" {
   sensitive = true
 }
 
+variable "cf_token" {
+  type      = string
+  sensitive = true
+}
+
 variable "cloud_provider" {
   type        = string
   default     = "digitalocean"

@@ -8,6 +8,7 @@ resource "digitalocean_droplet" "droplet" {
   ]
 }
 
+/*
 resource "digitalocean_record" "bakacore" {
   domain = data.digitalocean_domain.bakacore.id
   type   = "A"
@@ -23,4 +24,4 @@ resource "digitalocean_record" "www" {
   ttl    = 1800
   value  = digitalocean_droplet.droplet.ipv4_address
 }
-
+*/

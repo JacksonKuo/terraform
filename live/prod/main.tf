@@ -3,6 +3,7 @@ module springboot_app {
     providers = {
         digitalocean.parent = digitalocean
         github.parent = github
+        cloudflare.parent = cloudflare
     }
     cloud_provider = "digitalocean"
 }

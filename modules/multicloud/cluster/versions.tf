@@ -10,5 +10,10 @@ terraform {
       version = "~> 6.0"
       configuration_aliases = [github.parent]
     }
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+      version = "5.4.0"
+      configuration_aliases = [cloudflare.parent]
+    }
   }
 }
